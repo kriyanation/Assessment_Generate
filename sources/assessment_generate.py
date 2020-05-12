@@ -27,4 +27,5 @@ def generate_ip_paper(lesson_id,filename,db):
         cc.showPage()
         cc.save()
     except:
+        print("Assessment paper generation failed")
         logger.error(traceback.print_exc())
