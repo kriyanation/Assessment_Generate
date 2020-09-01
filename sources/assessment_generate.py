@@ -33,7 +33,7 @@ def generate_ip_paper(lesson_id,filename,db):
         link_width = cc.stringWidth("http://www.wondersky.in")
         link_rect = (220,810,290,795)
         cc.linkURL("http://www.wondersky.in", link_rect)
-        wraped_text = " ".join(wrap(text, 90,replace_whitespace=False))
+        wraped_text = "\n".join(wrap(text, 90,replace_whitespace=False))
         textobject = cc.beginText()
         textobject.setTextOrigin(50, 800)
         textobject.textLines(wraped_text)
